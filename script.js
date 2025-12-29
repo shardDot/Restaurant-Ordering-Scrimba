@@ -28,15 +28,17 @@ document.querySelector('#pre-checkout').addEventListener('click', (e) => {
         if(e.target.classList.contains('remove-btn')) {
             cart = cart.filter(item => item.id != e.target.dataset.id)
             renderPreCheckout()
+            
+            if(cart.length === 0) {
+                document.querySelector('#pre-checkout').innerHTML = ''
+            }
         }
 
         if(e.target.id === "complete-order-btn") {
             document.querySelector('.pay-modal').style.display = 'flex'
         }
 
-        if(cart.length === 0) {
-            document.querySelector('#pre-checkout').innerHTML = ''
-        }
+        
 })
 
 document.querySelector('form').addEventListener('submit', (e) => {
