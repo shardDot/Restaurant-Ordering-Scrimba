@@ -31,10 +31,18 @@ document.querySelector('#pre-checkout').addEventListener('click', (e) => {
             renderPreCheckout()
         }
 
+        if(e.target.id === "complete-order-btn") {
+            document.querySelector('.pay-modal').style.display = 'flex'
+        }
+
         if(cart.length === 0) {
             document.querySelector('#pre-checkout').innerHTML = ''
         }
-        
+})
+
+document.querySelector('form').addEventListener('submit', (e) => {
+    e.preventDefault()
+    document.querySelector('.pay-modal').style.display = 'none'
 })
 
 function getMenuHTML(arr) {
@@ -92,6 +100,6 @@ function renderPreCheckout() {
         return acc + cur.price * cur.quantity
     }, 0)}</p>
     </div>
-    <button id="complete-order-btn">Complete order</button>
+    <button class="green-btn" id="complete-order-btn">Complete order</button>
     `
 }

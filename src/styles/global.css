@@ -21,4 +21,6 @@ body {
     overflow: hidden;
     height: 95vh;
     width: 500px;
+    position: relative;
+
 }
