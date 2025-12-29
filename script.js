@@ -22,7 +22,6 @@ itemWrapper.addEventListener('click', (e) => {
             renderPreCheckout()
         }
     }
-    console.log(cart)
 })
 
 document.querySelector('#pre-checkout').addEventListener('click', (e) => {
@@ -43,6 +42,15 @@ document.querySelector('#pre-checkout').addEventListener('click', (e) => {
 document.querySelector('form').addEventListener('submit', (e) => {
     e.preventDefault()
     document.querySelector('.pay-modal').style.display = 'none'
+    let name = document.querySelector("#name-input").value
+
+    document.querySelector('#pre-checkout').innerHTML = `
+            <div id="order-completed">
+                Thanks, ${name}! Your order is on its way!
+            </div>
+    `
+
+    cart = []
 })
 
 function getMenuHTML(arr) {

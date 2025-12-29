@@ -108,6 +108,7 @@
     cursor: pointer;
     transition: all 0.250s ease;
     font-size: 20px;
+    font-family: Verdana;
 }
 
 .pay-modal {
@@ -118,6 +119,7 @@
     border-radius: 10px;
     border: 1px solid black;
     text-align: center;
+    font-family: Verdana;
 
     padding: 40px 20px 20px;
     width: 342px;
@@ -140,10 +142,28 @@
         input {
             height: 41px;
             padding-inline: 10px;
+            border: 2px solid #757575;
+            border-radius: 3px;
+            outline: none;
+        }
+
+        input:hover {
+
         }
     }
 
     #pay-btn {
         width: 100%;
     }
+}
+
+#order-completed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: #ECFDF5;
+    color: #065F46;
+    border-radius: 3px;
+    font-size: 20px;
 }
