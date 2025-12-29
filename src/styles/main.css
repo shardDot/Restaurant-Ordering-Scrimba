@@ -1,0 +1,58 @@
+.item-wrapper {
+    margin-inline: 50px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 45px 30px;
+    align-items: center;
+
+    .item-group {
+        display: flex;
+        align-items: center;       
+    }
+
+    #item-image {
+        font-size: 79px;
+    }
+
+    .item-info {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        #name {
+            font-size: 28px;
+        }
+
+        #ingredients {
+            color: #8B8B8B;
+        }
+
+        #price {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+    }
+    
+    #add-btn {
+        border: 1.5px solid #DEDEDE;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        font-size: 32px;
+        font-family: 'Inter';
+        font-weight: 300;
+        line-height: 24px;
+        cursor: pointer;
+    }
+    
+}
+
+.divider {
+    height: 1px;
+    margin-bottom: 45px;
+    background-color: #D2D2D2;
+}
