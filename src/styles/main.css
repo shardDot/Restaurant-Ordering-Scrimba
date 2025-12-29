@@ -1,11 +1,11 @@
-.item-wrapper {
+#item-wrapper {
     margin-inline: 50px;
 }
 
 .item {
     display: flex;
     justify-content: space-between;
-    margin-block: 45px 30px;
+    margin-block: 20px;
     align-items: center;
 
     .item-group {
@@ -53,6 +53,6 @@
 
 .divider {
     height: 1px;
-    margin-bottom: 45px;
+    margin-bottom: 20px;
     background-color: #D2D2D2;
 }

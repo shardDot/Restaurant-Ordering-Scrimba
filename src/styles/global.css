@@ -16,7 +16,9 @@ body {
 }
 
 .app {
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.211);
+    border-radius: 10px;
+    overflow: hidden;
     height: 90vh;
-    width: 600px;
+    width: 500px;
 }
